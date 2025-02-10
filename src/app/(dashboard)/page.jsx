@@ -2,12 +2,13 @@ import "@/styles/globals.scss"
 
 import Image from "next/image";
 import splash from "@/assets/images/splash-image.jpg"
+import PrimaryButton from "@/components/PrimaryButton";
 
 export default function Home() {
   return (
     <main>
 
-      <p>Test</p>
+      <p>Landrup Dans</p>
 
       <Image
       alt="splash image"
@@ -21,6 +22,9 @@ export default function Home() {
         zIndex: "-2"
       }}
     />
+
+    <PrimaryButton />
+
     </main>
   );
 }

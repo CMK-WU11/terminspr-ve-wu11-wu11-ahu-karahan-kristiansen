@@ -1,0 +1,29 @@
+@import '@/styles/color-variables.scss';
+
+.primary-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary;
+    padding: 1rem 2rem;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    a{
+        border: 1px solid $dark-font;
+        border-radius: 20px;
+        padding: 0.5rem;
+
+        &:hover{
+            background-color: $tertiary;
+        }
+
+        svg{
+            display: flex;
+            vertical-align: text-top;
+        }
+    }
+}
