@@ -9,7 +9,7 @@ export default function ActivityCard({ activityInfo }){
                 <p>{ activityInfo?.name }</p>
             </div>
             <Image
-                    alt="splash image"
+                    alt= { activityInfo?.name }
                     src={ activityInfo?.asset?.url }
                     quality={100}
                     fill
@@ -18,7 +18,7 @@ export default function ActivityCard({ activityInfo }){
                         objectFit: 'cover',
                         zIndex: "-2",
                         maxWidth: "300px"
-                        
+
                     }}
                 />
         </article>
