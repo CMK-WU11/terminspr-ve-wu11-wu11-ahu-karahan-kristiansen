@@ -1,10 +1,9 @@
 import "./nav-style.scss"
+import Link from "next/link"
 
 import { LuHouse } from "react-icons/lu";
-import { CiSearch } from "react-icons/ci";
-import { BsCalendar4 } from "react-icons/bs";
-
-import Link from "next/link"
+import { LuSearch } from "react-icons/lu";
+import { FiCalendar } from "react-icons/fi";
 
 export default function Nav(){
     return(
@@ -13,10 +12,10 @@ export default function Nav(){
                 <LuHouse />
             </Link>
             <Link href='/search'>
-                <CiSearch />
+                <LuSearch />
             </Link>
             <Link href='/kalender'>
-                <BsCalendar4 />
+                <FiCalendar />
             </Link>
         </nav>
     )

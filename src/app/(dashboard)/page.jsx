@@ -6,7 +6,8 @@ import PrimaryButton from "@/components/PrimaryButton";
 
 export default function Home() {
   return (
-    <main>
+
+    <main className="welcome-main">
 
       <p>Landrup Dans</p>
 
@@ -23,7 +24,7 @@ export default function Home() {
       }}
     />
 
-    <PrimaryButton />
+      <PrimaryButton />
 
     </main>
   );

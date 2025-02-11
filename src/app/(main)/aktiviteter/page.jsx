@@ -1,7 +1,10 @@
+import PageHeader from "@/components/PageHeader";
+
 export default function Aktiviteter(){
     return(
         <>
-        <p>A tester</p>
+            <PageHeader text = "Aktiviteter"/>
+            <p>A tester</p>
         </>
     )
 }
