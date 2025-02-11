@@ -1,7 +1,10 @@
+import PageHeader from "@/components/PageHeader";
+
 export default function Search(){
     return(
         <>
-        <p>Ø test</p>
+            <PageHeader text = "Søg"/>
+            <p>A tester</p>
         </>
     )
 }

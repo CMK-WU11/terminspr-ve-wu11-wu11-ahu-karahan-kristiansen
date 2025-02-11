@@ -1,12 +1,13 @@
 @import '@/styles/color-variables.scss';
 
-.primary-btn{
+.link-btn{
+    display:block;
     background-color: $primary;
     color: $light-font;
     padding: 0.5rem;
     width: 10rem;
     border: none;
     border-radius: 5px;
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    text-align: center;
     font-size: 1.125rem;
 }
