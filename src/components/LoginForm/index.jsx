@@ -18,11 +18,21 @@ export default function LoginForm(){
 
         <form action={formAction} className="loginform" noValidate>
 
-            <input type="text" name="username" placeholder="brugernavn"/>
+            <input 
+                defaultValue={formState?.formData?.username}
+                type="text" 
+                name="username" 
+                placeholder="brugernavn"
+            />
+            <span className="form-error">{formState?.errors?.username?._errors[0]}</span>
 
-            <input type="password" name="password" placeholder="adgangskode" />
-
-            <span>{formState?.error}</span>
+            <input 
+                defaultValue={formState?.formData?.password} 
+                type="password" 
+                name="password" 
+                placeholder="adgangskode" 
+            />
+            <span className="form-error">{formState?.errors?.password?._errors[0]}</span>
 
             {/* {isPending ? "Logger ind" : "Log ind"} */}
 

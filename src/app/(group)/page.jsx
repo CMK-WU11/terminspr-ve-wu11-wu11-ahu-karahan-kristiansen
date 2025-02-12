@@ -5,14 +5,14 @@ import LinkButton from "@/components/LinkButton";
 export default function Home() {
   return (
 
-    <div className="welcome-main">
+    <>
       <section className="welcome-section">
 
         <div className="logo">
           <p>Landrup<br/><span>Dans</span></p>
         </div>
 
-        <LinkButton link='/aktiviteter' linktext="Kom i gang"/>
+        <LinkButton link='/aktiviteter' linktext="Kom i gang" className="fade-in"/>
 
       </section>
 
@@ -29,6 +29,6 @@ export default function Home() {
           zIndex: "-2"
         }}
       />
-    </div>
+    </>
   );
 }

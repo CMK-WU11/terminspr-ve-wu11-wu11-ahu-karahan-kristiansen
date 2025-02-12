@@ -68,7 +68,7 @@ a {
 }
 
 
-.main-spacing{
+main{
   padding: 0rem 2rem;
 }
 
@@ -109,4 +109,18 @@ a {
     -webkit-text-stroke: 1px $primary;
   }
 
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }

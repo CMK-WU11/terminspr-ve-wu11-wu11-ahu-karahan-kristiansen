@@ -1,3 +1,5 @@
+@import '@/styles/color-variables.scss';
+
 .loginform{
     display: flex;
     flex-direction: column;
@@ -11,4 +13,13 @@ input {
     padding: 0.75rem 1.25rem;
     margin: 0.5rem 0rem;
     border: none;
+    outline: none;
+}
+
+input:focus {
+    background-color: $secondary;
+}
+
+.form-error{
+    color: red;
 }
