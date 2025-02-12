@@ -8,8 +8,9 @@ export default async function Aktiviteter(){
     return(
         <>
             <PageHeader text = "Aktiviteter"/>
-            <p>A tester</p>
-            <p>{ activities[1].name }</p>
+
+            {/* <p>{ activities[1].name }</p> */}
+            
             {
                 activities?.map( ( activity ) => {
                     return (

@@ -1,0 +1,16 @@
+.activity-details{
+    width: 100%;
+    padding: 1rem;
+}
+
+.activity-header{
+    position: relative;
+    width: clamp( 320px, 100%, 768px ); 
+    height: clamp( 320px, 100vw, 768px );
+}
+
+.activity-btn{
+    position: absolute;
+    bottom: 9;
+    right: 9;
+}

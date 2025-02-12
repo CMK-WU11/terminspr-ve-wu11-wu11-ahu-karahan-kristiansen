@@ -1,0 +1,20 @@
+@import '@/styles/color-variables.scss';
+
+.activity-card{
+    position: relative;
+    width: clamp( 320px, 100%, 768px ); //320 is a common minimum width for mobile design. 768px and up is usually tablet size.
+    height: clamp( 320px, 90vw, 768px );
+    margin: 1rem auto;
+    border-radius: 20px 20px 0px 20px;
+    overflow: hidden; //border radius will otherwise not apply correctly.
+}
+
+.activity-info{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 2rem;
+    color: $dark-font;
+    background: rgba(#E1A1E9, 0.8);
+    border-top-right-radius: 30px;
+}

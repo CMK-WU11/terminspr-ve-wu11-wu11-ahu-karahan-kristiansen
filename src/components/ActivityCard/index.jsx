@@ -1,14 +1,22 @@
 import Image from "next/image";
 
+import "./activitycard-style.scss"
+import Link from "next/link";
+
 
 export default function ActivityCard({ activityInfo }){
 
     return(
-        <article>
-            <div>
-                <p>{ activityInfo?.name }</p>
-            </div>
-            <Image
+        
+        <Link href={"/aktivitet/" + activityInfo.id} className="activity-link">
+            <article className="activity-card">
+
+                <div className="activity-info">
+                    <p>{ activityInfo?.name }</p>
+                    <p>{ activityInfo?.minAge } - { activityInfo?.maxAge } år</p>
+                </div>
+
+                <Image
                     alt= { activityInfo?.name }
                     src={ activityInfo?.asset?.url }
                     quality={100}
@@ -17,10 +25,10 @@ export default function ActivityCard({ activityInfo }){
                     style={{
                         objectFit: 'cover',
                         zIndex: "-2",
-                        maxWidth: "300px"
-
                     }}
                 />
-        </article>
+            </article>
+        </Link>
     )
+    
 }

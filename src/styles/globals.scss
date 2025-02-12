@@ -15,9 +15,11 @@ body {
 
 body {
   background: $primary;
+  color: $light-font;
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 5rem;
 }
 
 * {
@@ -66,8 +68,12 @@ a {
 }
 
 
+main{
+  // padding: 0rem 2rem;
+}
 
-//move later
+
+//move later - welcome 
 .welcome-main{
   margin: 0 auto;
   min-height: 100dvh;
