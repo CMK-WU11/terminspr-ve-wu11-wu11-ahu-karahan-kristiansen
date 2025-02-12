@@ -10,16 +10,16 @@ export default function ActivityDetails({ activityInfo }){
         <>
             <header className="activity-header">
                 <Image
-                            alt= { activityInfo?.name }
-                            src={ activityInfo?.asset?.url }
-                            quality={100}
-                            fill
-                            sizes="100vw"
-                            style={{
-                                objectFit: 'cover',
-                                zIndex: "-2",
-                            }}
-                    />
+                    alt= { activityInfo?.name }
+                    src={ activityInfo?.asset?.url }
+                    quality={100}
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: 'cover',
+                        zIndex: "-2",
+                    }}
+                />
 
                 <PrimaryButton text="Tilmeld" className="activity-btn"/>
             </header>

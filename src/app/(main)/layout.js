@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 
 export default function MainLayout({ children }) {
     return (
-        <main>
+        <main className="main-spacing">
             {children}
             <Nav />
         </main>

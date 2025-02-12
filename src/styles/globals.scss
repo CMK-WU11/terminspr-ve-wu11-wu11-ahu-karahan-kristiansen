@@ -34,7 +34,7 @@ a {
 }
 
 
-
+// Error Page 
 .error-page{
   display: flex;
   justify-content: center;
@@ -68,8 +68,8 @@ a {
 }
 
 
-main{
-  // padding: 0rem 2rem;
+.main-spacing{
+  padding: 0rem 2rem;
 }
 
 
@@ -106,7 +106,7 @@ main{
     font-family: 'Racing Sans One', Arial, Helvetica, sans-serif;
 
     -webkit-text-fill-color: #E856EB;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 1px $primary;
   }
 
 }

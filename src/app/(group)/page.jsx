@@ -5,7 +5,7 @@ import LinkButton from "@/components/LinkButton";
 export default function Home() {
   return (
 
-    <main className="welcome-main">
+    <div className="welcome-main">
       <section className="welcome-section">
 
         <div className="logo">
@@ -29,6 +29,6 @@ export default function Home() {
           zIndex: "-2"
         }}
       />
-    </main>
+    </div>
   );
 }
