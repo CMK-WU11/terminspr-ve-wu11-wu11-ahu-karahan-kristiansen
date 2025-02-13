@@ -33,11 +33,12 @@ export default function LoginForm(){
                 placeholder="adgangskode" 
             />
             <span className="form-error">{formState?.errors?.password?._errors[0]}</span>
-
+            
+            <span className="form-error">{formState?.error}</span>
+            
             {/* {isPending ? "Logger ind" : "Log ind"} */}
 
             <PrimaryButton text="Log ind" disable={isPending}/>
         </form>
     )
 }
-

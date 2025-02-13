@@ -1,10 +1,13 @@
 import Image from "next/image";
+import { cookies } from "next/headers";
+import ActivityButton from "../ActivityButton";
 
 import "./activitydetails-style.scss"
-import PrimaryButton from "../PrimaryButton";
 
-
-export default function ActivityDetails({ activityInfo }){
+export default async function ActivityDetails({ activityInfo }){
+    const cookieStore = await cookies()
+    const token = cookieStore.get("dance_token")
+    const uid = cookieStore.get("dance_uid")
 
     return(
         <>
@@ -20,8 +23,9 @@ export default function ActivityDetails({ activityInfo }){
                         zIndex: "-2",
                     }}
                 />
-
-                <PrimaryButton text="Tilmeld" className="activity-btn"/>
+                
+                <ActivityButton className="activity-btn" token={token.value} uid={uid.value} id={activityInfo?.id}/>
+                
             </header>
 
             <section className="activity-details">
@@ -31,5 +35,4 @@ export default function ActivityDetails({ activityInfo }){
             </section>
         </>
     )
-    
 }

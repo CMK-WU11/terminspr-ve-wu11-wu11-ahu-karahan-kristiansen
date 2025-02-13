@@ -8,13 +8,9 @@ export default async function Aktiviteter(){
     return(
         <>
             <PageHeader text = "Aktiviteter"/>
-
-            {/* <p>{ activities[1].name }</p> */}
-            
             {
                 activities?.map( ( activity ) => {
                     return (
-                        //TODO - Add UUID to the key value
                         <ActivityCard activityInfo={activity} key={ activity?.id } />
                     )
                 } )

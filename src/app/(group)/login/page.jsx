@@ -8,8 +8,7 @@ export default function Login(){
     return(
         <>
             <PageHeader text = "Log ind"/>
-
-
+            
             <LoginForm />
 
             <Image

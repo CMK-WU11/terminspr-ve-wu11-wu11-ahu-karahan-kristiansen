@@ -10,5 +10,4 @@ export default function CalenderEntry({ activityInfo }){
                 </section>
             </Link>
     )
-    
 }
