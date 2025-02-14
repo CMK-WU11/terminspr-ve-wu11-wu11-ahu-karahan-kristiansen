@@ -1,0 +1,45 @@
+@import '@/styles/color-variables.scss';
+
+// Error Page 
+.error-page{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+    padding: 0rem 2rem;
+    overflow: hidden;
+    
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+    h1{
+        padding-bottom: 1rem;
+    }
+}
+
+.error-container{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    button{
+        display:block;
+        background-color: $primary;
+        color: $light-font;
+        padding: 1rem;
+        width: 15rem;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.125rem;
+        cursor: pointer;
+    }
+}

@@ -1,16 +1,22 @@
 @import '@/styles/color-variables.scss';
 
-main{
-    margin: 0 auto;
-    min-height: 100dvh;
-    max-width: 768px;
-    position: relative;
+.welcome-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
 }
 
 .welcome-section{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    width:100%;
+    height: 80vh;
+    padding-top: 15rem;
     font-size: 2.25rem;
     text-align: end;
-
     font-weight: 700;
 
 .logo{
@@ -23,13 +29,11 @@ main{
         -webkit-text-stroke: 2px $primary;
         -webkit-font-smoothing: antialiased;
     }
-
 }
 
 span{
     font-size: 4.5rem;
     font-family: 'Racing Sans One', Arial, Helvetica, sans-serif;
-
     -webkit-text-fill-color: #E856EB;
     -webkit-text-stroke: 1px $primary;
 }

@@ -19,7 +19,6 @@ body {
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 5rem;
 }
 
 * {
@@ -28,41 +27,31 @@ body {
   margin: 0;
 }
 
+main{
+  margin: 0 auto;
+  min-height: 100dvh;
+  max-width: 768px;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.main-spacing{
+  padding: 0rem 1rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
+.background-tint{
+  background-color: #5e2e5380;
+  width:85rem;
+  height: 80vh;
+  transform: rotate(-27.19deg);
 
-// Error Page 
-.error-page{
-  display: flex;
-  justify-content: center;
-}
-
-.error-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 50%;
-  background-color: #e956eb5a;
-  padding: 2rem;
-
-  position: absolute; 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  button{
-    display:block;
-    background-color: $primary;
-    color: $light-font;
-    padding: 0.5rem;
-    width: 10rem;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.125rem;
-  }
+  position: absolute;
+  top: 0px;
+  left: -185px;
+  
 }

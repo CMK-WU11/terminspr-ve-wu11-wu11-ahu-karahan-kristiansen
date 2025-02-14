@@ -1,0 +1,25 @@
+.main-login{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    max-height: 100vh;
+    justify-content: center;
+    margin-bottom: 0rem;
+    padding: 0rem 2rem;
+    overflow: hidden;
+    
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    .login-section{
+        width: 90%;
+        margin: 0px auto;
+        
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+
+}

@@ -17,4 +17,9 @@
     color: $dark-font;
     background: rgba(#E1A1E9, 0.8);
     border-top-right-radius: 30px;
+
+    &:hover{
+        background: rgba(#5E2E53, 0.8);
+        color: $light-font;
+    }
 }

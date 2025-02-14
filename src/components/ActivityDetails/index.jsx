@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { cookies } from "next/headers";
 import ActivityButton from "../ActivityButton";
-
+import PageHeader from "@/components/PageHeader";
 import "./activitydetails-style.scss"
 
 export default async function ActivityDetails({ activityInfo }){
@@ -29,7 +29,9 @@ export default async function ActivityDetails({ activityInfo }){
             </header>
 
             <section className="activity-details">
-                <h1>{ activityInfo?.name }</h1>
+
+                <PageHeader text = { activityInfo?.name }/>
+                
                 <p>{ activityInfo?.minAge } - { activityInfo?.maxAge } år | { activityInfo?.weekday } kl. { activityInfo?.time }</p>
                 <p>{ activityInfo?.description }</p>
             </section>

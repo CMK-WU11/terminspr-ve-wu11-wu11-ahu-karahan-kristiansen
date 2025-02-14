@@ -2,9 +2,10 @@
 
 import Image from "next/image"
 import splash from "@/assets/images/splash-image.jpg"
+import { useEffect } from "react"
 import "@/components/LinkButton/linkbtn-style.scss"
 
-import { useEffect } from "react"
+import "@/styles/error-page-style.scss"
 
 export default function Error({ error, reset }) {
 
@@ -14,6 +15,10 @@ export default function Error({ error, reset }) {
 
 	return (
 		<main className="error-page">
+
+			<div className="background-tint">
+            </div>
+
 			<div className="error-container">
 				<h1>Ups, noget gik galt!</h1>
 				<button onClick={() => reset()}>Prøv igen</button>

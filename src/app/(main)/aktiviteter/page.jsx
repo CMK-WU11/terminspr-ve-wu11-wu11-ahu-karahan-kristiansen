@@ -6,7 +6,7 @@ export default async function Aktiviteter(){
     const activities = await serverFetch('http://localhost:4000/api/v1/activities');
 
     return(
-        <>
+        <main className="main-spacing">
             <PageHeader text = "Aktiviteter"/>
             {
                 activities?.map( ( activity ) => {
@@ -15,6 +15,6 @@ export default async function Aktiviteter(){
                     )
                 } )
             }
-        </>
+        </main>
     )
 }
