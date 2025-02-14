@@ -3,7 +3,7 @@ import SearchInput from "@/components/SearchInput";
 
 export default function Search(){
     return(
-        <main>
+        <main className="main-spacing">
             <PageHeader text = "Søg"/>
             <SearchInput />
         </main>

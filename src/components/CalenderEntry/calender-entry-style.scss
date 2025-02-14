@@ -1,4 +1,5 @@
-@import '@/styles/color-variables.scss';
+@use '@/styles/font-mixins.scss' as *;
+@use '@/styles/color-variables.scss' as *;
 
 .calender-details{
     background-color: $secondary;
@@ -6,4 +7,10 @@
     border-radius: 11px;
     padding: 1rem;
     margin-bottom: 1rem;
+    h2{
+        @include main-heading
+    }
+    p{
+        @include text-regular
+    }
 }

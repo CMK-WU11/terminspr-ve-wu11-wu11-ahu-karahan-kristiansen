@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { cookies } from "next/headers";
+
 import ActivityButton from "../ActivityButton";
 import PageHeader from "@/components/PageHeader";
+
 import "./activitydetails-style.scss"
 
 export default async function ActivityDetails({ activityInfo }){

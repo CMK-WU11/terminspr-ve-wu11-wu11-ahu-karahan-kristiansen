@@ -1,6 +1,12 @@
+@use '@/styles/font-mixins.scss' as *;
+
 .activity-details{
     width: 100%;
     padding: 1rem;
+
+    h1{
+        @include main-heading(1.5rem);
+    }
 }
 
 .activity-header{

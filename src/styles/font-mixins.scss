@@ -1,0 +1,14 @@
+@mixin main-font{
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin main-heading ($font-size : 2.25rem) { 
+    @include main-font;
+    font-size: $font-size; //Default: 36px, Detail: 1.5rem / 24px, Login: 3rem / 48px
+}
+
+@mixin text-regular ($font-size : 1.125rem){
+    @include main-font;
+    font-size: $font-size; //36px
+}

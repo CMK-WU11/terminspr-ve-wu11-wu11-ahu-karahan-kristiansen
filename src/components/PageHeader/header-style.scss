@@ -1,6 +1,8 @@
-@import '@/styles/color-variables.scss';
+@use '@/styles/font-mixins.scss' as *;
+@use '@/styles/color-variables.scss' as *;
 
 .header{
     color: $light-font;
-    padding-bottom: 1rem;
+    padding: 1rem 0rem;
+    @include main-heading;
 }

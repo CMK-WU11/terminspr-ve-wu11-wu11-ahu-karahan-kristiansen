@@ -24,19 +24,18 @@ export default function Error({ error, reset }) {
 				<button onClick={() => reset()}>Prøv igen</button>
 			</div>
 			
-	
-				<Image
-					alt="splash image"
-					src={splash}
-					placeholder="blur"
-					quality={100}
-					fill
-					sizes="100vw"
-					style={{
-						objectFit: 'cover',
-						zIndex: "-2"
-					}}
-				/>
+			<Image
+				alt="splash image"
+				src={splash}
+				placeholder="blur"
+				quality={100}
+				fill
+				sizes="100vw"
+				style={{
+					objectFit: 'cover',
+					zIndex: "-2"
+				}}
+			/>
 		</main>
 	)
 }

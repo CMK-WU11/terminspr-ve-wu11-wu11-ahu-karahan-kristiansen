@@ -1,16 +1,16 @@
-'use server' //actions skal have dette
+'use server'
 
 import { z } from "zod"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 
-export default async function LoginAction(prevState, formData){ //server actions skal være async
+export default async function LoginAction(prevState, formData){ 
 
     const username = formData.get("username")
     const password = formData.get("password")
 
     const schema = z.object({
-        username: z.string().min(1, {message: "Du skal udfylde et brugernavn"}), //min 1 tegn langt, laver vi ikke egen costume beskeder, så bruger zod standard engelske beskeder
+        username: z.string().min(1, {message: "Du skal udfylde et brugernavn"}),
         password: z.string().min(1, {message: "Du skal udfylde et adgangskode"})
     })
 
@@ -19,13 +19,13 @@ export default async function LoginAction(prevState, formData){ //server actions
         password
     })
     
-    if(!validate.success){ //kun returner fejl hvis formularen er udfyldt forkert
+    if(!validate.success){
         return{
             formData: {
                 username,
                 password
             },
-            errors: validate.error.format() //Formater til et object vi kan bruge
+            errors: validate.error.format()
         }  
     }
 
@@ -41,13 +41,13 @@ export default async function LoginAction(prevState, formData){ //server actions
 			})
 		})
         
-		if (response.status === 401) { // status 401 = Unauthorized   - hvis vi skriver forkert brugernavn eller adgangskode! 
+		if (response.status === 401) { // status 401 = Unauthorized  
 			return {
 				formData: {
 					username,
 					password
 				},
-				error: "Forkert email eller password" // generel fejl hvis api svarer 400 ellers forsætte med cookies
+				error: "Forkert email eller password"
 			}
 		}
 
@@ -59,11 +59,11 @@ export default async function LoginAction(prevState, formData){ //server actions
         console.log(data)
 
 		const cookieStore = await cookies() //import cookies fra next headers
-		cookieStore.set("dance_token", data.token, { maxAge: data.validUntil }) //maxage is set to the same as the api (stored in validUntil)
+		cookieStore.set("dance_token", data.token, { maxAge: data.validUntil }) //maxAge is set to the same as the api - stored in validUntil
 		cookieStore.set("dance_uid", data.userId, { maxAge: data.validUntil }) 
 
 	} catch (error) {
-		throw new Error(error) //sker der en fejl throw error
+		throw new Error(error) 
 	}
-	redirect("/") //redirect til forsiden
+	redirect("/")
 }

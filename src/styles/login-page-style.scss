@@ -1,3 +1,5 @@
+@use '@/styles/font-mixins.scss' as *;
+
 .main-login{
     display: flex;
     flex-direction: column;
@@ -19,7 +21,9 @@
         position: relative;
         top: 0px;
         left: 0px;
+
+        h1{
+            @include main-heading(3rem);
+        }
     }
-
-
 }

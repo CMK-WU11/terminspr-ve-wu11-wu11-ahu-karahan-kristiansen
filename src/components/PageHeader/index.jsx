@@ -1,8 +1,10 @@
 import "./header-style.scss"
 
-export default function Header({text}){
+export default function Header({text, className}){
 
     return(
-        <h1 className="header">{text}</h1>
+        <h1 className={`header${ className ? ` ${className}` : ''}`}>
+            {text}
+        </h1>
     )
 }

@@ -29,5 +29,4 @@ export default function ActivityCard({ activityInfo }){
             </article>
         </Link>
     )
-    
 }

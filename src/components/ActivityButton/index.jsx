@@ -26,7 +26,8 @@ export default function ActivityButton({className, token, uid, id }) {
 
 	return (
         <button className={`primary-btn${ className ? ` ${className}` : ''}`}>
-            {isSignedUp ? "Tilmeld" : "Forlad"}
+            {/* {isSignedUp ? "Tilmeld" : "Forlad"} */}
+            Tilmeld
         </button>
 	)
 }

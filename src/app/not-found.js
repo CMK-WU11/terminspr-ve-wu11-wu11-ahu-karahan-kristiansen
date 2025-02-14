@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Image from "next/image"
 import splash from "@/assets/images/splash-image.jpg"
 
