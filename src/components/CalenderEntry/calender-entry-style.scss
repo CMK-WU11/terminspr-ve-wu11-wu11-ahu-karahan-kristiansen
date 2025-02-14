@@ -1,0 +1,9 @@
+@import '@/styles/color-variables.scss';
+
+.calender-details{
+    background-color: $secondary;
+    color: $dark-font;
+    border-radius: 11px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

@@ -32,7 +32,7 @@ export default async function ActivityDetails({ activityInfo }){
 
                 <PageHeader text = { activityInfo?.name }/>
                 
-                <p>{ activityInfo?.minAge } - { activityInfo?.maxAge } år | { activityInfo?.weekday } kl. { activityInfo?.time }</p>
+                <p>{ activityInfo?.minAge } - { activityInfo?.maxAge } år | { activityInfo?.weekday } { activityInfo?.time }</p>
                 <p>{ activityInfo?.description }</p>
             </section>
         </>

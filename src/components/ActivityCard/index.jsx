@@ -1,14 +1,13 @@
 import Image from "next/image";
-
-import "./activitycard-style.scss"
 import Link from "next/link";
 
+import "./activitycard-style.scss"
 
 export default function ActivityCard({ activityInfo }){
 
     return(
         
-        <Link href={"/aktivitet/" + activityInfo.id} className="activity-link">
+        <Link href={"/aktivitet/" + activityInfo.id}>
             <article className="activity-card">
 
                 <div className="activity-info">
